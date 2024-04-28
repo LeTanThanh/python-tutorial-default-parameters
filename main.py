@@ -15,3 +15,11 @@ if __name__ == "__main__":
 
   This cause a synyax error
   """
+
+  # Python default parameters example
+
+  def greet(name, message = "Hi"):
+    return f"{message} {name}"
+
+  print(greet("John", "Hello"))
+  print(greet("John"))
