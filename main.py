@@ -18,8 +18,17 @@ if __name__ == "__main__":
 
   # Python default parameters example
 
-  def greet(name, message = "Hi"):
+  # def greet(name, message = "Hi"):
+  #   return f"{message} {name}"
+
+  # print(greet("John", "Hello"))
+  # print(greet("John"))
+
+  # Multiple default parameters
+
+  def greet(name = "there", message = "Hi"):
     return f"{message} {name}"
 
-  print(greet("John", "Hello"))
-  print(greet("John"))
+  print(greet())
+  print(greet("Hello"))           # Hi Hello
+  print(greet(message = "Hello")) # Hello there
